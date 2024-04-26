@@ -18,6 +18,16 @@
 
 ## Instalación
 
+**Creacion de DB**
+INSERT INTO articulos (descripcion, precio, stock) VALUES
+('Harina Maiz 3kg', 151.00, 150),
+('Fanta naranja', 36.00, 10),
+('Vino Malbec', 252.00, 42),
+('Azucar - 3kg', 450.00,30),
+('Leche entera Sancor', 89.00, 16),
+('Dulce de leche Sancor', 99.00, 50),
+('Queso Crema', 150.00, 60);
+
 ## Uso
 
 Para poder usar **ApiRestNodeJS** de manera local es necesario contar con Docker/MySQL, NodeJS
