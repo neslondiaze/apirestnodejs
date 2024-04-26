@@ -1,0 +1,15 @@
+#
+version: "3.8"
+
+services:
+  mySQL:
+    image: mysql:latest
+    restart: always
+    container_name: mySQL
+    environment:
+      - MYSQL_DATABASE=MYSQL_ROOT_PASSWORD
+      - MYSQL_ROOT_PASSWORD=MYSQL_ROOT_PASSWORD
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./sql/myData:/var/lib/mysql
